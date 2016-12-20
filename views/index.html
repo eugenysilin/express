@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+<h1>{{title}}</h1>
+<span>Home</span>
+<a href="/users">Users</a>
+<a href="/posts">Posts</a>
+<p>{{description}}</p>
+
+<form action="" method="post">
+    <input type="text" name="first_name" value="" placeholder="Enter Your First Name"/>
+    <input type="text" name="last_name" value="" placeholder="Enter Your Last Name"/>
+    <input type="submit" name="form_submit" value="Submit"/>
+</form>
+
+{% if first_name %}<p>Your First Name: {{first_name}}</p>{% endif %}
+{% if last_name %}<p>Your Last Name: {{last_name}}</p>{% endif %}
+
+</body>
+</html>
