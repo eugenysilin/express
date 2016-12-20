@@ -13,7 +13,7 @@ var gulp = require('gulp'),
  */
 gulp.task('server', function() {
     if (node) node.kill();
-    node = spawn('node', ['bin/www'], ['DEBUG=express:* '], {stdio: 'inherit'});
+    node = spawn('node', ['bin/www'], {stdio: 'inherit'});
     node.on('close', function (code) {
         if (code === 8) {
             gulp.log('Error detected, waiting for changes...');
