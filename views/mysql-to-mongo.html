@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a href="{{data.site_url}}" target="_blank">{{data.site_name}}</a>
+
+<br /><br />
+
+{% for item in data %}
+    {{item}} <br />
+{% endfor %}
+</body>
+</html>
